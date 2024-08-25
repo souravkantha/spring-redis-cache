@@ -70,6 +70,9 @@ INSERT INTO ITEMS VALUES (10004, 'Kelloggs Corn Flakes Real Almond Honey', 'Kell
 ### Delete Product
 ````curl --location --request DELETE 'http://localhost:8080/products/20000'````
 
+#### Open redis-cli 
+````redis-cli````
+
 #### Check with redis-cli after product deletion (cache is evicted for key product::20000)
 <img width="178" alt="Screenshot 2023-05-11 at 6 37 04 PM" src="https://github.com/souravkantha/spring-redis-cache/assets/32014166/a5bc6d43-a3e8-4dfe-b057-3d36bf073da4">
 

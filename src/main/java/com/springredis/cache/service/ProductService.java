@@ -21,6 +21,7 @@ public class ProductService {
 	@Autowired
 	private ProductRepository productRepository;
 	
+	@Cacheable(value = "product", key = "#productDTO.productId")
 	public void createProduct(ProductDTO productDTO) {
 		
 		this.productRepository.save(productDTO);
@@ -45,7 +46,6 @@ public class ProductService {
 		
 	}
 	
-	//@CachePut(value = "product", key = "#productDTO.productId")
 	@CachePut(value = "product", key = "#productId")
 	public ProductDTO updateProduct(Integer productId, ProductDTO productDTO) {
 		

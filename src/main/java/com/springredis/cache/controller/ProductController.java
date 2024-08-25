@@ -15,7 +15,7 @@ import com.springredis.cache.exceptions.DataNotFoundException;
 import com.springredis.cache.service.ProductService;
 
 
-@RestController()
+@RestController
 @RequestMapping(value = "/products")
 public class ProductController {
 	
