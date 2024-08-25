@@ -12,7 +12,7 @@ Application showcasing simple write through cache implementation using spring-re
 ![image](https://github.com/souravkantha/spring-redis-cache/assets/32014166/89e2cd91-e9cf-4af4-99e3-70bc0aca2749)
 
 ## Java Version
-Used open-jdk **version 17** (https://openjdk.org/projects/jdk/17/)
+Used open-jdk **version 18** (https://openjdk.org/projects/jdk/18/)
 
 ## Redis Installation 
 https://redis.io/docs/getting-started/installation/
